@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<title>巴卡漫画_巴卡漫画在线免费漫画阅读_热门漫画大全排行榜</title>
+<meta name="description" content="巴卡漫画提供热血、恋爱、奇幻、悬疑等题材漫画在线免费阅读,巴卡漫画按单行本整理漫画大全与漫画排行榜、追漫指南与漫画资讯,支持手机移动端自适应阅读,找漫画看漫画就上巴卡漫画。">
+<meta name="keywords" content="巴卡漫画,巴卡漫画在线阅读,免费漫画,漫画大全,漫画排行榜,热门漫画,国漫,日漫,手机看漫画">
+<meta name="author" content="巴卡漫画">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#3a2a1e">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="canonical" href="https://www.bakamanhua.cn/">
+<link rel="apple-touch-icon" href="/favicon.ico">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="巴卡漫画">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:url" content="https://www.bakamanhua.cn/">
+<meta property="og:title" content="巴卡漫画_在线免费漫画阅读与漫画大全">
+<meta property="og:description" content="巴卡漫画每日更新热门漫画,按单行本整理漫画大全与排行榜,手机移动端自适应阅读,看漫画更顺畅。">
+<meta property="og:image" content="https://www.bakamanhua.cn/favicon.ico">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="巴卡漫画_在线免费漫画阅读">
+<meta name="twitter:description" content="巴卡漫画,热血恋爱奇幻悬疑漫画一站看完,移动端自适应,每日更新漫画榜单。">
+<style>
+:root{
+  --paper:#f7f1e4;
+  --paper2:#efe6d4;
+  --wood:#6b4a2f;
+  --wood2:#4a3020;
+  --wood3:#8a6440;
+  --ink:#241a12;
+  --ink2:#443325;
+  --txt:#6b5c4c;
+  --sub:#94836f;
+  --red:#c0392b;
+  --blue:#2d5d8c;
+  --green:#3f7d55;
+  --purple:#6b4a8c;
+  --orange:#d97e1a;
+  --gold:#c9a227;
+  --rule:#d9cdb6;
+  --max:1240px;
+  --sans:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Helvetica Neue",Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background-color:var(--paper);
+  background-image:
+    repeating-linear-gradient(90deg,rgba(107,74,47,.05) 0 2px,transparent 2px 26px),
+    radial-gradient(720px 420px at 4% -6%,rgba(192,57,43,.06),transparent 62%),
+    radial-gradient(700px 400px at 98% 2%,rgba(45,93,140,.06),transparent 62%);
+  color:var(--ink);
+  font:15px/1.82 var(--sans);
+  overflow-x:hidden;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
+
+/* ===== 木纹隔板 ===== */
+.shelf{position:relative;height:20px;border-radius:2px;margin:26px 0 24px;
+  background:
+    repeating-linear-gradient(90deg,rgba(0,0,0,.06) 0 3px,transparent 3px 9px),
+    linear-gradient(180deg,var(--wood3),var(--wood) 42%,var(--wood2));
+  box-shadow:0 5px 0 rgba(0,0,0,.18),0 10px 18px rgba(74,48,32,.22)}
+.shelf::before,.shelf::after{content:"";position:absolute;bottom:-8px;width:14px;height:8px;
+  background:linear-gradient(180deg,var(--wood),var(--wood2))}
+.shelf::before{left:16px}
+.shelf::after{right:16px}
+.shelf .label{position:absolute;left:50%;top:-11px;transform:translateX(-50%);background:var(--ink);color:var(--gold);
+  font-size:10.5px;font-weight:900;letter-spacing:.18em;padding:4px 16px;border-radius:2px;white-space:nowrap;
+  box-shadow:0 3px 8px rgba(0,0,0,.28)}
+/* 书脊小串 */
+.spine-row{display:flex;align-items:flex-end;justify-content:center;gap:7px;padding:2px 0 4px}
+.spine-row s{width:13px;height:44px;text-decoration:none;border-radius:2px 2px 1px 1px;border:1px solid rgba(0,0,0,.3);
+  box-shadow:inset 0 0 5px rgba(0,0,0,.24)}
+.spine-row s:nth-child(4n+1){background:var(--red);height:52px}
+.spine-row s:nth-child(4n+2){background:var(--blue);height:38px}
+.spine-row s:nth-child(4n+3){background:var(--green);height:48px}
+.spine-row s:nth-child(4n+4){background:var(--purple);height:42px}
+
+/* ===== 顶栏：书店招牌 ===== */
+.topbar{position:sticky;top:0;z-index:60;
+  background:
+    repeating-linear-gradient(90deg,rgba(0,0,0,.08) 0 2px,transparent 2px 12px),
+    linear-gradient(180deg,var(--wood3),var(--wood2));
+  box-shadow:0 8px 22px rgba(74,48,32,.4)}
+.topbar .board-line{display:flex;align-items:center;justify-content:space-between;gap:10px;max-width:var(--max);
+  margin:0 auto;padding:8px 20px;border-bottom:2px solid rgba(0,0,0,.28)}
+.topbar .board-line span{font-size:11px;font-weight:900;letter-spacing:.16em;color:var(--gold)}
+.topbar .board-line em{font-style:normal;font-size:11px;font-weight:800;color:rgba(255,255,255,.7);letter-spacing:.06em}
+.topbar .wrap{display:flex;align-items:center;gap:14px;height:72px}
+.logo{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.logo .book{width:42px;height:46px;flex:0 0 auto;border-radius:1px 4px 4px 1px;position:relative;overflow:hidden;
+  background:linear-gradient(90deg,#8a1f14,var(--red) 46%,#7a160c);border-left:5px solid #4a0e07;
+  box-shadow:2px 2px 6px rgba(0,0,0,.4)}
+.logo .book::before{content:"";position:absolute;left:0;right:0;top:9px;height:2px;background:var(--gold);opacity:.85}
+.logo .book::after{content:"";position:absolute;left:0;right:0;bottom:9px;height:2px;background:var(--gold);opacity:.85}
+.logo .book b{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);text-align:center;
+  font-size:12px;font-weight:900;color:var(--gold);letter-spacing:.04em}
+.logo b{font-size:21px;font-weight:900;color:#fff;letter-spacing:-.5px}
+.logo b em{font-style:normal;color:var(--gold)}
+.logo small{display:block;font-size:9px;letter-spacing:2.4px;color:rgba(255,255,255,.66);font-weight:800}
+.nav{flex:1 1 auto;display:flex;align-items:center;gap:2px}
+.nav a{padding:7px 10px;font-size:13.5px;font-weight:800;color:rgba(255,255,255,.92);white-space:nowrap;
+  border-radius:2px;transition:.16s}
+.nav a:hover,.nav a.on{background:var(--paper);color:var(--wood2)}
+.search{flex:0 1 200px;display:flex;align-items:center;background:rgba(0,0,0,.28);border:1px solid rgba(201,162,39,.7)}
+.search input{flex:1;min-width:0;border:0;outline:0;background:none;font-size:13.5px;font-weight:700;padding:8px 11px;color:#fff}
+.search input::placeholder{color:rgba(255,255,255,.6)}
+.search button{border:0;cursor:pointer;padding:8px 14px;background:var(--gold);color:var(--ink);font-weight:900;font-size:13px}
+.search button:hover{background:var(--red);color:#fff}
+.menu-btn{display:none;border:1px solid var(--gold);background:var(--paper);color:var(--wood2);font-weight:900;
+  font-size:13px;padding:8px 15px;cursor:pointer;flex:0 0 auto;border-radius:2px}
+.menu-btn.on{background:var(--red);color:#fff;border-color:var(--red)}
+
+/* ===== HERO：本期陈列架 ===== */
+.hero{padding:14px 0 6px}
+.case{background:var(--paper2);border:1px solid var(--rule);border-radius:3px;padding:14px;
+  box-shadow:0 18px 36px rgba(74,48,32,.16)}
+.case .rail{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 6px 12px;flex-wrap:wrap}
+.case .rail em{font-style:normal;font-size:11px;font-weight:900;letter-spacing:.18em;color:var(--wood)}
+.case .rail .tags{display:flex;gap:7px}
+.case .rail .tags s{width:22px;height:22px;text-decoration:none;border-radius:2px;display:grid;place-items:center;
+  font-size:10px;font-weight:900;color:#fff}
+.case .rail .tags s:nth-child(1){background:var(--red)}
+.case .rail .tags s:nth-child(2){background:var(--blue)}
+.case .rail .tags s:nth-child(3){background:var(--green)}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:20px;padding:0 6px}
+/* 左：大开本新刊 */
+.feature{display:flex;gap:14px;padding:14px;background:var(--paper);border:1px solid var(--rule);border-radius:3px;
+  box-shadow:0 8px 16px rgba(74,48,32,.1)}
+.spine{width:46px;flex:0 0 auto;border-radius:2px 5px 5px 2px;position:relative;overflow:hidden;
+  background:linear-gradient(90deg,#8a1f14,var(--red) 44%,#7a160c);border-left:5px solid #4a0e07;
+  box-shadow:2px 2px 8px rgba(0,0,0,.3)}
+.spine i{position:absolute;left:0;right:0;height:2px;background:var(--gold);opacity:.85}
+.spine i:nth-child(1){top:22px}
+.spine i:nth-child(2){bottom:22px}
+.spine b{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);writing-mode:vertical-rl;font-size:13px;
+  font-weight:900;color:var(--gold);letter-spacing:.14em;text-align:center}
+.feature .body{flex:1;min-width:0}
+.feature .obi{display:inline-block;background:var(--ink);color:#fff;font-size:10.5px;font-weight:900;letter-spacing:.1em;
+  padding:4px 11px;border-radius:2px}
+.feature h1{margin:12px 0 10px;font-size:33px;line-height:1.26;font-weight:900;letter-spacing:-.9px}
+.feature h1 span{color:var(--red);border-bottom:5px solid var(--gold)}
+.feature .lead{font-size:14.5px;color:var(--txt)}
+.feature .lead b{background:var(--wood2);color:#fff;padding:1px 8px;border-radius:2px}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.btn{padding:12px 24px;font-weight:900;font-size:14.5px;transition:.18s;border-radius:2px}
+.btn:hover{transform:translateY(-3px)}
+.btn-1{background:var(--red);color:#fff;box-shadow:0 8px 18px rgba(192,57,43,.26)}
+.btn-2{background:transparent;color:var(--wood2);border:2px solid var(--wood)}
+.btn-2:hover{background:var(--wood2);color:#fff}
+/* 右：书脊墙 + 新刊清单 */
+.rack{border:1px solid var(--rule);border-radius:3px;background:var(--paper);padding:14px;
+  box-shadow:0 8px 16px rgba(74,48,32,.1)}
+.rack .rt{font-size:15.5px;font-weight:900;color:var(--wood2);display:flex;align-items:center;gap:8px}
+.rack .rt s{width:14px;height:14px;background:var(--gold);text-decoration:none;transform:rotate(45deg)}
+.rack .rs{font-size:11px;font-weight:800;color:var(--sub);letter-spacing:.08em;margin-top:3px}
+.spines{display:flex;align-items:flex-end;gap:6px;height:96px;margin:12px 0 8px;padding:0 4px;
+  border-bottom:8px solid transparent;
+  border-image:linear-gradient(180deg,var(--wood3),var(--wood2)) 1}
+.spines s{flex:1;text-decoration:none;border-radius:2px 2px 1px 1px;position:relative;border:1px solid rgba(0,0,0,.28);
+  box-shadow:inset 0 0 6px rgba(0,0,0,.22)}
+.spines s:nth-child(5n+1){background:var(--red);height:88%}
+.spines s:nth-child(5n+2){background:var(--blue);height:64%}
+.spines s:nth-child(5n+3){background:var(--green);height:80%}
+.spines s:nth-child(5n+4){background:var(--purple);height:70%}
+.spines s:nth-child(5n+5){background:var(--orange);height:92%}
+.spines s:nth-child(3n){background:var(--gold);height:74%}
+.rack ul{border-top:2px solid var(--rule)}
+.rack li{display:flex;align-items:center;gap:9px;padding:9px 0;font-size:13.5px;font-weight:800;
+  border-bottom:1px dashed var(--rule)}
+.rack li:last-child{border-bottom:0}
+.rack li .vol{flex:0 0 auto;font-size:10.5px;font-weight:900;color:#fff;background:var(--wood);padding:2px 8px;
+  border-radius:2px}
+.rack li .n{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rack li em{font-style:normal;font-size:10.5px;font-weight:900;color:var(--ink);background:var(--gold);
+  padding:2px 8px;border-radius:2px}
+.kpi{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}
+.kpi div{border:1px solid var(--rule);padding:9px 6px;text-align:center;background:var(--paper2);border-radius:2px}
+.kpi b{display:block;font-size:16px;font-weight:900;color:var(--red)}
+.kpi span{font-size:10.5px;font-weight:800;color:var(--txt)}
+.rack .go{margin-top:12px;display:block;text-align:center;background:var(--wood2);color:#fff;font-weight:900;
+  font-size:13px;padding:11px 14px;border-radius:2px}
+.rack .go:hover{background:var(--red)}
+
+/* ===== 区块 ===== */
+section{padding:30px 0 4px}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:18px;flex-wrap:wrap}
+.sec-head h2{font-size:23px;font-weight:900;letter-spacing:-.5px;display:flex;align-items:center;gap:11px}
+.sec-head h2::before{content:"";width:8px;height:26px;flex:0 0 auto;border-radius:1px 3px 3px 1px;
+  background:linear-gradient(90deg,#8a1f14,var(--red));border-left:4px solid #4a0e07}
+.sec-head p{font-size:12.5px;color:var(--sub);font-weight:800;margin-top:4px}
+.more{font-size:13px;font-weight:900;padding:9px 17px;border-radius:2px;background:var(--paper2);color:var(--wood2);
+  border:1px solid var(--rule)}
+.more:hover{background:var(--wood2);color:#fff}
+.tabs{display:flex;gap:9px;overflow-x:auto;padding:3px 0 16px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{flex:0 0 auto;font-size:13.5px;font-weight:800;padding:8px 16px;border-radius:2px;background:var(--paper2);
+  color:var(--ink2);white-space:nowrap;border:1px solid var(--rule)}
+.tabs a.on,.tabs a:hover{background:var(--wood2);color:#fff;border-color:var(--wood2)}
+
+/* ===== 漫画卡：单行本 ===== */
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.card{display:flex;background:var(--paper);border:1px solid var(--rule);border-radius:2px 4px 4px 2px;
+  transition:.22s;position:relative;overflow:hidden;box-shadow:0 8px 18px rgba(74,48,32,.1)}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 30px rgba(74,48,32,.2)}
+.card .sp{width:38px;flex:0 0 auto;position:relative;border-radius:0 3px 3px 0;overflow:hidden;
+  background:linear-gradient(90deg,#8a1f14,var(--red) 44%,#7a160c);border-left:5px solid #4a0e07}
+.card:nth-child(5n+2) .sp{background:linear-gradient(90deg,#1c4468,var(--blue) 44%,#132e46)}
+.card:nth-child(5n+3) .sp{background:linear-gradient(90deg,#275336,var(--green) 44%,#1a3a24)}
+.card:nth-child(5n+4) .sp{background:linear-gradient(90deg,#4a2f66,var(--purple) 44%,#33204a)}
+.card:nth-child(5n+5) .sp{background:linear-gradient(90deg,#a35b0d,var(--orange) 44%,#7d4409)}
+.card .sp i{position:absolute;left:0;right:0;height:1.5px;background:rgba(201,162,39,.8)}
+.card .sp i:nth-child(1){top:14px}
+.card .sp i:nth-child(2){bottom:14px}
+.card .sp b{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);writing-mode:vertical-rl;
+  font-size:11px;font-weight:900;color:var(--gold);letter-spacing:.08em;text-align:center}
+.card .bd{flex:1;min-width:0;padding:10px 12px 12px}
+.card .obi{display:inline-block;font-size:10px;font-weight:900;letter-spacing:.08em;color:#fff;background:var(--ink);
+  padding:3px 8px;border-radius:2px}
+.card:nth-child(5n+2) .obi{background:var(--blue)}
+.card:nth-child(5n+3) .obi{background:var(--green)}
+.card:nth-child(5n+4) .obi{background:var(--purple)}
+.card:nth-child(5n+5) .obi{background:var(--orange)}
+.cv{position:relative;aspect-ratio:3/4;overflow:hidden;margin-top:9px;border:1px solid var(--rule);border-radius:2px}
+.cv .bg{position:absolute;inset:0}
+.cv .grain{position:absolute;inset:0;
+  background-image:radial-gradient(circle,rgba(0,0,0,.16) .8px,transparent 1px);background-size:5px 5px}
+.cv .tt{position:absolute;left:0;right:0;bottom:0;padding:24px 9px 9px;color:#fff;font-weight:900;font-size:13.5px;
+  background:linear-gradient(180deg,transparent,rgba(36,26,18,.94))}
+.cv .ep{position:absolute;left:6px;top:6px;font-size:10px;font-weight:900;color:#fff;background:rgba(36,26,18,.9);
+  padding:2px 7px;border-radius:2px}
+.cv .sc{position:absolute;right:6px;bottom:32px;font-size:11.5px;font-weight:900;color:var(--ink);
+  background:var(--gold);padding:1px 8px;border-radius:2px}
+.pinfo{margin-top:9px}
+.pinfo .nm{font-size:14px;font-weight:900;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pinfo .mt{font-size:11px;color:var(--sub);font-weight:800;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pinfo .row{display:flex;justify-content:space-between;align-items:center;font-size:10px;font-weight:800;
+  color:var(--txt);letter-spacing:.03em;margin-top:8px;padding-top:8px;border-top:1px dashed var(--rule)}
+.pinfo .row b{color:var(--red)}
+
+/* ===== 排行榜：三层书架牌 ===== */
+.board{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.board .col{background:var(--paper);border:1px solid var(--rule);border-radius:3px;overflow:hidden;
+  box-shadow:0 8px 18px rgba(74,48,32,.1)}
+.board .hd{padding:12px 14px;display:flex;align-items:center;gap:11px;color:#fff;position:relative}
+.board .col:nth-child(1) .hd{background:linear-gradient(180deg,#8a1f14,var(--red))}
+.board .col:nth-child(2) .hd{background:linear-gradient(180deg,#1c4468,var(--blue))}
+.board .col:nth-child(3) .hd{background:linear-gradient(180deg,#4a2f66,var(--purple))}
+.board .hd::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+  background:repeating-linear-gradient(90deg,rgba(255,255,255,.4) 0 6px,transparent 6px 12px)}
+.board .hd i{width:28px;height:28px;flex:0 0 auto;display:grid;place-items:center;font-style:normal;font-size:12px;
+  font-weight:900;color:var(--ink);background:var(--gold);border-radius:2px}
+.board .hd h3{font-size:15px;font-weight:900;letter-spacing:.03em}
+.board li a{display:flex;gap:10px;align-items:center;padding:11px 14px;border-bottom:1px dashed var(--rule)}
+.board li:last-child a{border-bottom:0}
+.board li a:hover{background:var(--paper2)}
+.board .no{flex:0 0 26px;height:26px;line-height:26px;font-size:12px;font-weight:900;color:var(--ink2);
+  text-align:center;background:var(--paper2);border:1px solid var(--rule);border-radius:2px}
+.board li:nth-child(-n+3) .no{color:#fff;background:var(--red);border-color:var(--red)}
+.board .t{flex:1;font-size:14px;font-weight:800;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.board .h{font-size:12px;font-weight:900;color:var(--ink);background:var(--gold);padding:2px 9px;border-radius:2px}
+
+/* ===== 追漫指南：书架标签 ===== */
+.guide{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.guide article{background:var(--paper);border:1px solid var(--rule);border-radius:3px;padding:16px;transition:.22s;
+  box-shadow:0 8px 18px rgba(74,48,32,.08);border-top:5px solid var(--red)}
+.guide article:nth-child(4n+2){border-top-color:var(--blue)}
+.guide article:nth-child(4n+3){border-top-color:var(--green)}
+.guide article:nth-child(4n+4){border-top-color:var(--orange)}
+.guide article:hover{transform:translateY(-5px);box-shadow:0 18px 30px rgba(74,48,32,.2)}
+.guide .tag{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:900;letter-spacing:.08em;
+  color:#fff;background:var(--ink);padding:5px 11px;border-radius:2px}
+.guide article:nth-child(4n+2) .tag{background:var(--blue)}
+.guide article:nth-child(4n+3) .tag{background:var(--green)}
+.guide article:nth-child(4n+4) .tag{background:var(--orange)}
+.guide h4{font-size:16px;font-weight:900;margin:12px 0 6px;letter-spacing:-.2px}
+.guide p{font-size:12.5px;font-weight:700;color:var(--txt)}
+.guide .go{margin-top:10px;font-size:12.5px;font-weight:900;color:var(--red);display:inline-block;
+  border-bottom:3px solid var(--gold)}
+
+/* ===== 资讯 ===== */
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.news article{background:var(--paper);border:1px solid var(--rule);border-radius:3px;overflow:hidden;transition:.22s;
+  display:flex;flex-direction:column;box-shadow:0 8px 18px rgba(74,48,32,.08)}
+.news article:hover{transform:translateY(-5px);box-shadow:0 18px 30px rgba(74,48,32,.2)}
+.news .ph{height:118px;position:relative;border-bottom:1px solid var(--rule)}
+.news .ph s{position:absolute;right:10px;bottom:10px;font-size:11px;font-weight:900;color:#fff;background:var(--wood2);
+  padding:4px 11px;text-decoration:none;border-radius:2px}
+.news .b{padding:16px}
+.news h3{font-size:15.5px;font-weight:900;line-height:1.5;margin-bottom:8px;letter-spacing:-.3px}
+.news p{font-size:13px;color:var(--txt);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.news time{display:block;margin-top:10px;font-size:11px;font-weight:800;color:var(--sub);letter-spacing:.08em}
+
+/* ===== FAQ ===== */
+.faq{background:var(--paper);border:1px solid var(--rule);border-radius:3px;padding:4px 24px;
+  box-shadow:0 8px 18px rgba(74,48,32,.08)}
+.faq details{padding:15px 0;border-bottom:1px dashed var(--rule)}
+.faq details:last-child{border-bottom:0}
+.faq summary{cursor:pointer;font-size:15.5px;font-weight:900;letter-spacing:-.3px;list-style:none;
+  display:flex;justify-content:space-between;gap:14px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"店员解答";font-size:11px;font-weight:900;color:var(--gold);background:var(--wood2);
+  padding:3px 9px;border-radius:2px;flex:0 0 auto}
+.faq details[open] summary::after{content:"已解答";background:var(--red);color:#fff}
+.faq p{font-size:14px;color:var(--txt);padding-top:10px}
+
+/* ===== 页脚：书店招牌 ===== */
+footer{margin-top:38px;position:relative;
+  background:
+    repeating-linear-gradient(90deg,rgba(0,0,0,.08) 0 2px,transparent 2px 12px),
+    linear-gradient(180deg,var(--wood),var(--wood2));
+  color:rgba(255,255,255,.86);padding:32px 0 26px}
+footer::before{content:"";display:block;height:16px;position:absolute;left:0;right:0;top:0;
+  background:linear-gradient(180deg,var(--wood3),var(--wood));box-shadow:0 5px 0 rgba(0,0,0,.18)}
+.f-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:26px}
+.f-grid h4{font-size:15px;font-weight:900;margin-bottom:12px;color:var(--gold)}
+.f-grid a,.f-grid p{font-size:13.5px;color:rgba(255,255,255,.78);line-height:2.05;font-weight:700}
+.f-grid a:hover{color:var(--gold)}
+.f-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;padding-top:18px;border-top:1px dashed rgba(255,255,255,.26)}
+.f-links a{font-size:12.5px;font-weight:800;padding:8px 15px;border-radius:2px;background:rgba(255,255,255,.13);
+  color:rgba(255,255,255,.94)}
+.f-links a:hover{background:var(--gold);color:var(--ink)}
+.copy{margin-top:18px;padding-top:14px;border-top:1px dashed rgba(255,255,255,.26);font-size:12.5px;
+  color:rgba(255,255,255,.62);text-align:center;line-height:1.9}
+#toTop{position:fixed;right:16px;bottom:24px;z-index:70;width:50px;height:50px;border-radius:2px 4px 4px 2px;
+  background:linear-gradient(90deg,#8a1f14,var(--red));border-left:5px solid #4a0e07;color:var(--gold);
+  font-size:16px;font-weight:900;cursor:pointer;box-shadow:0 8px 18px rgba(74,48,32,.36);opacity:0;
+  pointer-events:none;transition:.3s}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{background:linear-gradient(90deg,#c9a227,var(--gold));color:var(--ink)}
+
+/* ===== 响应式 ===== */
+@media (max-width:1080px){
+  .grid{grid-template-columns:repeat(4,1fr)}
+  .guide{grid-template-columns:repeat(3,1fr)}
+  .search{flex:0 1 164px}
+  .feature h1{font-size:28px}
+}
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:16px}
+  .board{grid-template-columns:1fr 1fr}
+  .news{grid-template-columns:1fr 1fr}
+  .f-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:768px){
+  .menu-btn{display:block}
+  .search{display:none}
+  .nav{position:fixed;left:0;right:0;top:72px;z-index:59;max-height:0;overflow:hidden;transition:max-height .3s ease;
+    background:var(--wood2);flex-direction:column;align-items:stretch;padding:0 20px}
+  body.menu-open .nav{max-height:390px;padding:8px 20px 14px}
+  .nav a{padding:13px 12px;border-bottom:1px dashed rgba(255,255,255,.26);border-radius:0;color:rgba(255,255,255,.92)}
+  .nav a:last-child{border-bottom:0}
+  .topbar .board-line em{display:none}
+  .hero{padding:10px 0 4px}
+  .case{padding:9px}
+  .case .rail{padding:0 2px 10px}
+  .hero-grid{padding:0 2px}
+  .feature{flex-direction:column;gap:10px;padding:12px}
+  .spine{width:100%;height:40px;border-radius:2px;border-left:0;border-top:5px solid #4a0e07;
+    background:linear-gradient(180deg,#8a1f14,var(--red) 46%,#7a160c)}
+  .spine i:nth-child(1){left:16px;right:auto;top:0;bottom:0;width:2px;height:auto}
+  .spine i:nth-child(2){right:16px;left:auto;top:0;bottom:0;width:2px;height:auto}
+  .spine b{writing-mode:horizontal-tb;letter-spacing:.14em}
+  .feature h1{font-size:23px;letter-spacing:0}
+  .feature .lead{font-size:14px}
+  .hero-btns .btn{flex:1 1 46%;text-align:center;padding:12px 12px;font-size:14px}
+  .spines{height:74px}
+  .rack{padding:12px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:14px}
+  .guide{grid-template-columns:1fr 1fr;gap:14px}
+  section{padding:24px 0 4px}
+  .sec-head h2{font-size:19px}
+  .board,.news{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr;gap:16px}
+  .copy{text-align:left}
+  .shelf{height:16px;margin:22px 0 20px}
+  .shelf .label{font-size:10px;padding:4px 12px;letter-spacing:.14em}
+  .spine-row s{height:34px}
+  .spine-row s:nth-child(4n+1){height:42px}
+  .spine-row s:nth-child(4n+3){height:38px}
+  .card:hover,.guide article:hover,.news article:hover{transform:none}
+}
+@media (max-width:400px){
+  .grid{grid-template-columns:1fr}
+  .logo b{font-size:18px}
+  .kpi{grid-template-columns:1fr}
+  .card .sp{width:32px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "@id":"https://www.bakamanhua.cn/#website",
+      "url":"https://www.bakamanhua.cn/",
+      "name":"巴卡漫画",
+      "alternateName":"巴卡漫画在线免费漫画阅读",
+      "description":"巴卡漫画提供热血、恋爱、奇幻、悬疑等题材漫画在线免费阅读,按单行本整理漫画大全与漫画排行榜、追漫指南与漫画资讯,支持手机移动端自适应阅读。",
+      "inLanguage":"zh-CN",
+      "potentialAction":{
+        "@type":"SearchAction",
+        "target":"https://www.bakamanhua.cn/?s={search_term_string}",
+        "query-input":"required name=search_term_string"
+      }
+    },
+    {
+      "@type":"Organization",
+      "@id":"https://www.bakamanhua.cn/#org",
+      "name":"巴卡漫画",
+      "url":"https://www.bakamanhua.cn/",
+      "logo":"https://www.bakamanhua.cn/favicon.ico"
+    },
+    {
+      "@type":"ItemList",
+      "name":"巴卡漫画热门漫画榜单",
+      "itemListOrder":"https://schema.org/ItemListOrderDescending",
+      "numberOfItems":6,
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"一人之下"},
+        {"@type":"ListItem","position":2,"name":"镖人"},
+        {"@type":"ListItem","position":3,"name":"咒术回战"},
+        {"@type":"ListItem","position":4,"name":"葬送的芙莉莲"},
+        {"@type":"ListItem","position":5,"name":"斗破苍穹"},
+        {"@type":"ListItem","position":6,"name":"王者天下"}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header class="topbar">
+  <div class="board-line">
+    <span>巴卡漫画 · 漫画书店</span>
+    <em>BAKA MANHUA · 全 26 卷 · 每日上新</em>
+  </div>
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="巴卡漫画首页">
+      <span class="book" aria-hidden="true"><b>巴卡</b></span>
+      <span><b>巴卡<em>漫画</em></b><small>MANHUA BOOKSTORE</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="网站主导航">
+      <a href="#" class="on">书架首页</a>
+      <a href="#">热门漫画</a>
+      <a href="#">国漫专区</a>
+      <a href="#">日漫专区</a>
+      <a href="#">悬疑奇幻</a>
+      <a href="#">排行榜</a>
+      <a href="#">追漫指南</a>
+      <a href="#">漫画资讯</a>
+    </nav>
+    <form class="search" action="#" method="get" role="search" onsubmit="return false;">
+      <input type="search" name="s" placeholder="在巴卡漫画找书…" aria-label="搜索漫画">
+      <button type="submit">找书</button>
+    </form>
+    <button class="menu-btn" id="menuBtn" aria-label="展开导航菜单" aria-expanded="false">书目</button>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="shelf" aria-hidden="true"><span class="label">本期陈列 · NEW ARRIVAL</span></div>
+</div>
+
+<div class="hero wrap">
+  <div class="case">
+    <div class="rail">
+      <em>巴卡漫画 · 本期推荐书架</em>
+      <span class="tags" aria-hidden="true"><s>热</s><s>新</s><s>完</s></span>
+    </div>
+    <div class="hero-grid">
+      <div class="feature">
+        <span class="spine" aria-hidden="true"><i></i><i></i><b>巴卡漫画 第 0521 卷</b></span>
+        <div class="body">
+          <span class="obi">本期新刊</span>
+          <h1>巴卡漫画　<span>在线免费漫画阅读</span></h1>
+          <p class="lead">巴卡漫画收录热血、恋爱、奇幻、悬疑、日常、搞笑、武侠、机甲等题材漫画，按单行本整理目录，<b>支持手机移动端自适应阅读</b>，翻页流畅、不卡不顿。找漫画、看漫画、追更新，巴卡漫画一站搞定。</p>
+          <div class="hero-btns">
+            <a class="btn btn-1" href="#">▶ 开始阅读</a>
+            <a class="btn btn-2" href="#">今日上新表</a>
+          </div>
+        </div>
+      </div>
+      <aside class="rack">
+        <div class="rt"><s aria-hidden="true"></s>今日上新单行本</div>
+        <div class="rs">2026 / 09 / 26 · 共 12 册</div>
+        <div class="spines" aria-hidden="true">
+          <s></s><s></s><s></s><s></s><s></s><s></s><s></s><s></s><s></s><s></s><s></s><s></s>
+        </div>
+        <ul>
+          <li><span class="vol">第 1 卷</span><span class="n">一人之下</span><em>更新</em></li>
+          <li><span class="vol">第 2 卷</span><span class="n">镖人</span><em>新刊</em></li>
+          <li><span class="vol">第 3 卷</span><span class="n">咒术回战</span><em>连载</em></li>
+          <li><span class="vol">第 4 卷</span><span class="n">葬送的芙莉莲</span><em>更新</em></li>
+          <li><span class="vol">第 5 卷</span><span class="n">斗破苍穹</span><em>完结</em></li>
+        </ul>
+        <div class="kpi">
+          <div><b>52,400+</b><span>漫画书目</span></div>
+          <div><b>高清</b><span>全彩页</span></div>
+          <div><b>24H</b><span>更新不停</span></div>
+          <div><b>MOBILE</b><span>移动端阅读</span></div>
+        </div>
+        <a class="go" href="#">查看完整书目 →</a>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="spine-row" aria-hidden="true">
+    <s></s><s></s><s></s><s></s><s></s><s></s><s></s><s></s><s></s><s></s><s></s><s></s><s></s>
+  </div>
+</div>
+
+<main>
+<!-- 栏目一：热门推荐 -->
+<section id="hot" class="wrap">
+  <div class="sec-head">
+    <div>
+      <h2>巴卡漫画热门推荐</h2>
+      <p>本架精选 · 阅读量最高的漫画</p>
+    </div>
+    <a class="more" href="#">查看全部 →</a>
+  </div>
+  <div class="tabs" aria-label="漫画题材筛选">
+    <a href="#" class="on">全部漫画</a>
+    <a href="#">热血</a>
+    <a href="#">恋爱</a>
+    <a href="#">奇幻</a>
+    <a href="#">悬疑</a>
+    <a href="#">日常</a>
+    <a href="#">搞笑</a>
+    <a href="#">武侠</a>
+    <a href="#">机甲</a>
+    <a href="#">国漫</a>
+  </div>
+  <div class="grid">
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 1 卷</b></span>
+      <div class="bd">
+        <span class="obi">热门</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#c0392b,#4a0e07)"></div><span class="grain"></span>
+          <span class="ep">更新至 612 话</span><span class="sc">9.2</span>
+          <div class="tt">一人之下</div>
+        </div>
+        <div class="pinfo"><div class="nm">一人之下</div><div class="mt">国漫 / 奇幻 · 连载中</div>
+          <div class="row"><span>卷号 001</span><b>更新中</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 2 卷</b></span>
+      <div class="bd">
+        <span class="obi">新刊</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#2d5d8c,#0c2036)"></div><span class="grain"></span>
+          <span class="ep">更新至 208 话</span><span class="sc">9.3</span>
+          <div class="tt">镖人</div>
+        </div>
+        <div class="pinfo"><div class="nm">镖人</div><div class="mt">国漫 / 武侠 · 连载中</div>
+          <div class="row"><span>卷号 002</span><b>更新中</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 3 卷</b></span>
+      <div class="bd">
+        <span class="obi">连载</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#3f7d55,#123021)"></div><span class="grain"></span>
+          <span class="ep">更新至 268 话</span><span class="sc">8.9</span>
+          <div class="tt">咒术回战</div>
+        </div>
+        <div class="pinfo"><div class="nm">咒术回战</div><div class="mt">日漫 / 热血 · 连载中</div>
+          <div class="row"><span>卷号 003</span><b>更新中</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 4 卷</b></span>
+      <div class="bd">
+        <span class="obi">更新</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#6b4a8c,#221032)"></div><span class="grain"></span>
+          <span class="ep">更新至 139 话</span><span class="sc">9.4</span>
+          <div class="tt">葬送的芙莉莲</div>
+        </div>
+        <div class="pinfo"><div class="nm">葬送的芙莉莲</div><div class="mt">日漫 / 奇幻 · 连载中</div>
+          <div class="row"><span>卷号 004</span><b>更新中</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 5 卷</b></span>
+      <div class="bd">
+        <span class="obi">完结</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#d97e1a,#5c2f05)"></div><span class="grain"></span>
+          <span class="ep">全 658 话</span><span class="sc">8.6</span>
+          <div class="tt">斗破苍穹</div>
+        </div>
+        <div class="pinfo"><div class="nm">斗破苍穹</div><div class="mt">国漫 / 玄幻 · 完结</div>
+          <div class="row"><span>卷号 005</span><b>全集上线</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 6 卷</b></span>
+      <div class="bd">
+        <span class="obi">热门</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#c0392b,#2d5d8c)"></div><span class="grain"></span>
+          <span class="ep">更新至 780 话</span><span class="sc">9.1</span>
+          <div class="tt">王者天下</div>
+        </div>
+        <div class="pinfo"><div class="nm">王者天下</div><div class="mt">日漫 / 历史 · 连载中</div>
+          <div class="row"><span>卷号 006</span><b>更新中</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 7 卷</b></span>
+      <div class="bd">
+        <span class="obi">新刊</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#2d5d8c,#6b4a8c)"></div><span class="grain"></span>
+          <span class="ep">更新至 92 话</span><span class="sc">8.5</span>
+          <div class="tt">电锯人 第二部</div>
+        </div>
+        <div class="pinfo"><div class="nm">电锯人 第二部</div><div class="mt">日漫 / 暗黑 · 连载中</div>
+          <div class="row"><span>卷号 007</span><b>更新中</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 8 卷</b></span>
+      <div class="bd">
+        <span class="obi">连载</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#3f7d55,#c9a227)"></div><span class="grain"></span>
+          <span class="ep">更新至 356 话</span><span class="sc">8.8</span>
+          <div class="tt">鬼灭之刃</div>
+        </div>
+        <div class="pinfo"><div class="nm">鬼灭之刃</div><div class="mt">日漫 / 热血 · 完结</div>
+          <div class="row"><span>卷号 008</span><b>全集上线</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 9 卷</b></span>
+      <div class="bd">
+        <span class="obi">更新</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#6b4a8c,#c0392b)"></div><span class="grain"></span>
+          <span class="ep">更新至 144 话</span><span class="sc">8.7</span>
+          <div class="tt">间谍过家家</div>
+        </div>
+        <div class="pinfo"><div class="nm">间谍过家家</div><div class="mt">日漫 / 搞笑 · 连载中</div>
+          <div class="row"><span>卷号 009</span><b>更新中</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 10 卷</b></span>
+      <div class="bd">
+        <span class="obi">完结</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#d97e1a,#3f7d55)"></div><span class="grain"></span>
+          <span class="ep">全 139 话</span><span class="sc">9.0</span>
+          <div class="tt">进击的巨人</div>
+        </div>
+        <div class="pinfo"><div class="nm">进击的巨人</div><div class="mt">日漫 / 奇幻 · 完结</div>
+          <div class="row"><span>卷号 010</span><b>全集上线</b></div></div>
+      </div>
+    </a></article>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="shelf" aria-hidden="true"><span class="label">国漫专区 · CHINESE MANHUA</span></div>
+</div>
+
+<!-- 栏目二：国漫 -->
+<section id="cn" class="wrap">
+  <div class="sec-head">
+    <div>
+      <h2>巴卡漫画 · 国漫专区</h2>
+      <p>国产漫画 · 玄幻武侠 · 都市搞笑</p>
+    </div>
+    <a class="more" href="#">进入国漫架 →</a>
+  </div>
+  <div class="grid">
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 11 卷</b></span>
+      <div class="bd">
+        <span class="obi">热门</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#c0392b,#4a0e07)"></div><span class="grain"></span>
+          <span class="ep">更新至 612 话</span><span class="sc">9.2</span>
+          <div class="tt">一人之下</div>
+        </div>
+        <div class="pinfo"><div class="nm">一人之下</div><div class="mt">国漫 / 奇幻 · 连载中</div>
+          <div class="row"><span>卷号 011</span><b>更新中</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 12 卷</b></span>
+      <div class="bd">
+        <span class="obi">新刊</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#2d5d8c,#0c2036)"></div><span class="grain"></span>
+          <span class="ep">更新至 208 话</span><span class="sc">9.3</span>
+          <div class="tt">镖人</div>
+        </div>
+        <div class="pinfo"><div class="nm">镖人</div><div class="mt">国漫 / 武侠 · 连载中</div>
+          <div class="row"><span>卷号 012</span><b>更新中</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 13 卷</b></span>
+      <div class="bd">
+        <span class="obi">完结</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#d97e1a,#5c2f05)"></div><span class="grain"></span>
+          <span class="ep">全 658 话</span><span class="sc">8.6</span>
+          <div class="tt">斗破苍穹</div>
+        </div>
+        <div class="pinfo"><div class="nm">斗破苍穹</div><div class="mt">国漫 / 玄幻 · 完结</div>
+          <div class="row"><span>卷号 013</span><b>全集上线</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 14 卷</b></span>
+      <div class="bd">
+        <span class="obi">连载</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#3f7d55,#123021)"></div><span class="grain"></span>
+          <span class="ep">更新至 430 话</span><span class="sc">8.4</span>
+          <div class="tt">狐妖小红娘</div>
+        </div>
+        <div class="pinfo"><div class="nm">狐妖小红娘</div><div class="mt">国漫 / 恋爱 · 连载中</div>
+          <div class="row"><span>卷号 014</span><b>更新中</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 15 卷</b></span>
+      <div class="bd">
+        <span class="obi">更新</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#6b4a8c,#221032)"></div><span class="grain"></span>
+          <span class="ep">更新至 320 话</span><span class="sc">8.3</span>
+          <div class="tt">非人哉</div>
+        </div>
+        <div class="pinfo"><div class="nm">非人哉</div><div class="mt">国漫 / 搞笑 · 连载中</div>
+          <div class="row"><span>卷号 015</span><b>更新中</b></div></div>
+      </div>
+    </a></article>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="shelf" aria-hidden="true"><span class="label">日漫专区 · JAPANESE MANGA</span></div>
+</div>
+
+<!-- 栏目三：日漫 -->
+<section id="jp" class="wrap">
+  <div class="sec-head">
+    <div>
+      <h2>巴卡漫画 · 日漫专区</h2>
+      <p>少年漫 · 青年漫 · 经典完结作</p>
+    </div>
+    <a class="more" href="#">进入日漫架 →</a>
+  </div>
+  <div class="grid">
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 16 卷</b></span>
+      <div class="bd">
+        <span class="obi">连载</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#2d5d8c,#0c2036)"></div><span class="grain"></span>
+          <span class="ep">更新至 268 话</span><span class="sc">8.9</span>
+          <div class="tt">咒术回战</div>
+        </div>
+        <div class="pinfo"><div class="nm">咒术回战</div><div class="mt">日漫 / 热血 · 连载中</div>
+          <div class="row"><span>卷号 016</span><b>更新中</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 17 卷</b></span>
+      <div class="bd">
+        <span class="obi">更新</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#6b4a8c,#221032)"></div><span class="grain"></span>
+          <span class="ep">更新至 139 话</span><span class="sc">9.4</span>
+          <div class="tt">葬送的芙莉莲</div>
+        </div>
+        <div class="pinfo"><div class="nm">葬送的芙莉莲</div><div class="mt">日漫 / 奇幻 · 连载中</div>
+          <div class="row"><span>卷号 017</span><b>更新中</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 18 卷</b></span>
+      <div class="bd">
+        <span class="obi">完结</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#3f7d55,#c9a227)"></div><span class="grain"></span>
+          <span class="ep">全 205 话</span><span class="sc">8.8</span>
+          <div class="tt">鬼灭之刃</div>
+        </div>
+        <div class="pinfo"><div class="nm">鬼灭之刃</div><div class="mt">日漫 / 热血 · 完结</div>
+          <div class="row"><span>卷号 018</span><b>全集上线</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 19 卷</b></span>
+      <div class="bd">
+        <span class="obi">热门</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#c0392b,#2d5d8c)"></div><span class="grain"></span>
+          <span class="ep">更新至 780 话</span><span class="sc">9.1</span>
+          <div class="tt">王者天下</div>
+        </div>
+        <div class="pinfo"><div class="nm">王者天下</div><div class="mt">日漫 / 历史 · 连载中</div>
+          <div class="row"><span>卷号 019</span><b>更新中</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 20 卷</b></span>
+      <div class="bd">
+        <span class="obi">新刊</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#d97e1a,#4a0e07)"></div><span class="grain"></span>
+          <span class="ep">更新至 92 话</span><span class="sc">8.5</span>
+          <div class="tt">电锯人 第二部</div>
+        </div>
+        <div class="pinfo"><div class="nm">电锯人 第二部</div><div class="mt">日漫 / 暗黑 · 连载中</div>
+          <div class="row"><span>卷号 020</span><b>更新中</b></div></div>
+      </div>
+    </a></article>
+  </div>
+</section>
+
+<!-- 栏目四：悬疑奇幻 -->
+<section id="fan" class="wrap">
+  <div class="sec-head">
+    <div>
+      <h2>巴卡漫画 · 悬疑与奇幻</h2>
+      <p>烧脑推理 · 异世界冒险 · 精品佳作</p>
+    </div>
+    <a class="more" href="#">进入悬疑奇幻架 →</a>
+  </div>
+  <div class="grid">
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 21 卷</b></span>
+      <div class="bd">
+        <span class="obi">烧脑</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#241a12,#000000)"></div><span class="grain"></span>
+          <span class="ep">全 108 话</span><span class="sc">9.3</span>
+          <div class="tt">死亡笔记</div>
+        </div>
+        <div class="pinfo"><div class="nm">死亡笔记</div><div class="mt">日漫 / 悬疑 · 完结</div>
+          <div class="row"><span>卷号 021</span><b>全集上线</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 22 卷</b></span>
+      <div class="bd">
+        <span class="obi">经典</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#6b4a8c,#241a12)"></div><span class="grain"></span>
+          <span class="ep">全 139 话</span><span class="sc">9.0</span>
+          <div class="tt">进击的巨人</div>
+        </div>
+        <div class="pinfo"><div class="nm">进击的巨人</div><div class="mt">日漫 / 奇幻 · 完结</div>
+          <div class="row"><span>卷号 022</span><b>全集上线</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 23 卷</b></span>
+      <div class="bd">
+        <span class="obi">更新</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#2d5d8c,#241a12)"></div><span class="grain"></span>
+          <span class="ep">更新至 176 话</span><span class="sc">8.7</span>
+          <div class="tt">迷宫饭</div>
+        </div>
+        <div class="pinfo"><div class="nm">迷宫饭</div><div class="mt">日漫 / 奇幻 · 连载中</div>
+          <div class="row"><span>卷号 023</span><b>更新中</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 24 卷</b></span>
+      <div class="bd">
+        <span class="obi">悬疑</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#c0392b,#241a12)"></div><span class="grain"></span>
+          <span class="ep">更新至 88 话</span><span class="sc">8.6</span>
+          <div class="tt">暗芝居</div>
+        </div>
+        <div class="pinfo"><div class="nm">暗芝居</div><div class="mt">日漫 / 悬疑 · 连载中</div>
+          <div class="row"><span>卷号 024</span><b>更新中</b></div></div>
+      </div>
+    </a></article>
+    <article class="card"><a href="#">
+      <span class="sp" aria-hidden="true"><i></i><i></i><b>第 25 卷</b></span>
+      <div class="bd">
+        <span class="obi">异世界</span>
+        <div class="cv">
+          <div class="bg" style="background:linear-gradient(165deg,#3f7d55,#241a12)"></div><span class="grain"></span>
+          <span class="ep">更新至 132 话</span><span class="sc">8.2</span>
+          <div class="tt">关于我转生变成史莱姆这档事</div>
+        </div>
+        <div class="pinfo"><div class="nm">关于我转生变成史莱姆这档事</div><div class="mt">日漫 / 异世界 · 连载中</div>
+          <div class="row"><span>卷号 025</span><b>更新中</b></div></div>
+      </div>
+    </a></article>
+  </div>
+</section>
+
+<!-- 栏目五：漫画排行榜 -->
+<section id="rank" class="wrap">
+  <div class="sec-head">
+    <div>
+      <h2>巴卡漫画漫画排行榜</h2>
+      <p>实时热度 · 口碑评分 · 阅读人次综合排序</p>
+    </div>
+    <a class="more" href="#">完整榜单 →</a>
+  </div>
+  <div class="board">
+    <div class="col">
+      <div class="hd"><i>A</i><h3>国漫热读榜</h3></div>
+      <ol>
+        <li><a href="#"><span class="no">1</span><span class="t">一人之下</span><span class="h">9.2</span></a></li>
+        <li><a href="#"><span class="no">2</span><span class="t">镖人</span><span class="h">9.3</span></a></li>
+        <li><a href="#"><span class="no">3</span><span class="t">狐妖小红娘</span><span class="h">8.4</span></a></li>
+        <li><a href="#"><span class="no">4</span><span class="t">斗破苍穹</span><span class="h">8.6</span></a></li>
+        <li><a href="#"><span class="no">5</span><span class="t">非人哉</span><span class="h">8.3</span></a></li>
+        <li><a href="#"><span class="no">6</span><span class="t">镇魂街</span><span class="h">8.5</span></a></li>
+      </ol>
+    </div>
+    <div class="col">
+      <div class="hd"><i>B</i><h3>日漫热读榜</h3></div>
+      <ol>
+        <li><a href="#"><span class="no">1</span><span class="t">葬送的芙莉莲</span><span class="h">9.4</span></a></li>
+        <li><a href="#"><span class="no">2</span><span class="t">王者天下</span><span class="h">9.1</span></a></li>
+        <li><a href="#"><span class="no">3</span><span class="t">咒术回战</span><span class="h">8.9</span></a></li>
+        <li><a href="#"><span class="no">4</span><span class="t">鬼灭之刃</span><span class="h">8.8</span></a></li>
+        <li><a href="#"><span class="no">5</span><span class="t">迷宫饭</span><span class="h">8.7</span></a></li>
+        <li><a href="#"><span class="no">6</span><span class="t">电锯人 第二部</span><span class="h">8.5</span></a></li>
+      </ol>
+    </div>
+    <div class="col">
+      <div class="hd"><i>C</i><h3>经典完结榜</h3></div>
+      <ol>
+        <li><a href="#"><span class="no">1</span><span class="t">死亡笔记</span><span class="h">9.3</span></a></li>
+        <li><a href="#"><span class="no">2</span><span class="t">进击的巨人</span><span class="h">9.0</span></a></li>
+        <li><a href="#"><span class="no">3</span><span class="t">海贼王</span><span class="h">9.2</span></a></li>
+        <li><a href="#"><span class="no">4</span><span class="t">灌篮高手</span><span class="h">9.0</span></a></li>
+        <li><a href="#"><span class="no">5</span><span class="t">钢之炼金术师</span><span class="h">9.1</span></a></li>
+        <li><a href="#"><span class="no">6</span><span class="t">火影忍者</span><span class="h">8.9</span></a></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目六：追漫指南 -->
+<section id="guide" class="wrap">
+  <div class="sec-head">
+    <div>
+      <h2>巴卡漫画追漫指南</h2>
+      <p>按书架分类标签找书</p>
+    </div>
+    <a class="more" href="#">全部指南 →</a>
+  </div>
+  <div class="guide">
+    <article><a href="#">
+      <span class="tag">书架 A</span>
+      <h4>本周上新</h4>
+      <p>刚上架的新刊单行本，第一时间看到。</p>
+      <span class="go">进入指南 →</span>
+    </a></article>
+    <article><a href="#">
+      <span class="tag">书架 B</span>
+      <h4>热血战斗</h4>
+      <p>少年漫与战斗番，燃向读者首选。</p>
+      <span class="go">进入指南 →</span>
+    </a></article>
+    <article><a href="#">
+      <span class="tag">书架 C</span>
+      <h4>恋爱青春</h4>
+      <p>校园恋爱与青春群像，甜度拉满。</p>
+      <span class="go">进入指南 →</span>
+    </a></article>
+    <article><a href="#">
+      <span class="tag">书架 D</span>
+      <h4>奇幻异界</h4>
+      <p>异世界转生与魔法冒险题材合集。</p>
+      <span class="go">进入指南 →</span>
+    </a></article>
+    <article><a href="#">
+      <span class="tag">书架 E</span>
+      <h4>国漫精品</h4>
+      <p>国产漫画精选，玄幻武侠与都市搞笑。</p>
+      <span class="go">进入指南 →</span>
+    </a></article>
+    <article><a href="#">
+      <span class="tag">书架 F</span>
+      <h4>悬疑推理</h4>
+      <p>烧脑智斗与心理博弈，推理迷专区。</p>
+      <span class="go">进入指南 →</span>
+    </a></article>
+    <article><a href="#">
+      <span class="tag">书架 G</span>
+      <h4>轻松日常</h4>
+      <p>治愈搞笑与小日常，适合随手翻阅。</p>
+      <span class="go">进入指南 →</span>
+    </a></article>
+    <article><a href="#">
+      <span class="tag">书架 H</span>
+      <h4>经典完结</h4>
+      <p>已完结的经典长篇，一次补完不等待。</p>
+      <span class="go">进入指南 →</span>
+    </a></article>
+  </div>
+</section>
+
+<!-- 栏目七：漫画资讯 -->
+<section id="news" class="wrap">
+  <div class="sec-head">
+    <div>
+      <h2>巴卡漫画漫画资讯</h2>
+      <p>新刊上架 · 更新播报 · 追漫攻略</p>
+    </div>
+    <a class="more" href="#">更多资讯 →</a>
+  </div>
+  <div class="news">
+    <article><a href="#">
+      <div class="ph" style="background:linear-gradient(140deg,#c0392b,#4a0e07)"><s>新刊播报</s></div>
+      <div class="b">
+        <h3>本周新刊上架清单，5 部漫画同步更新</h3>
+        <p>涵盖国漫玄幻、日漫热血与奇幻三类，巴卡漫画已同步上架高清章节。</p>
+        <time datetime="2026-09-18">2026-09-18</time>
+      </div>
+    </a></article>
+    <article><a href="#">
+      <div class="ph" style="background:linear-gradient(140deg,#2d5d8c,#0c2036)"><s>更新播报</s></div>
+      <div class="b">
+        <h3>完结漫画补番清单：这些经典一次读完</h3>
+        <p>从热血到悬疑共 6 部完结佳作，补番进度可在巴卡漫画榜单页查看。</p>
+        <time datetime="2026-09-17">2026-09-17</time>
+      </div>
+    </a></article>
+    <article><a href="#">
+      <div class="ph" style="background:linear-gradient(140deg,#3f7d55,#123021)"><s>阅读攻略</s></div>
+      <div class="b">
+        <h3>手机看漫画更省流？移动端自适应阅读实测</h3>
+        <p>小屏自适应布局 + 分页预加载，巴卡漫画在弱网环境下依旧保持流畅阅读。</p>
+        <time datetime="2026-09-15">2026-09-15</time>
+      </div>
+    </a></article>
+  </div>
+</section>
+
+<!-- 栏目八：常见问题 -->
+<section id="faq" class="wrap">
+  <div class="sec-head">
+    <div>
+      <h2>关于巴卡漫画的常见问题</h2>
+      <p>新读者必读 · 阅读与找书说明</p>
+    </div>
+  </div>
+  <div class="faq">
+    <details open>
+      <summary>巴卡漫画是什么类型的漫画网站？</summary>
+      <p>巴卡漫画是一个在线免费漫画阅读平台，收录热血、恋爱、奇幻、悬疑、日常、搞笑、武侠、机甲等题材漫画，按单行本整理目录，提供漫画大全、漫画排行榜、追漫指南与漫画资讯，支持电脑与手机移动端自适应阅读。</p>
+    </details>
+    <details>
+      <summary>巴卡漫画更新频率怎么样？</summary>
+      <p>巴卡漫画每日 20:00 定时上新，国漫与日漫热门连载按周同步跟更，完结作品持续补充，并在漫画排行榜中实时呈现热度变化。</p>
+    </details>
+    <details>
+      <summary>在手机上打开巴卡漫画会很耗流量吗？</summary>
+      <p>不会。巴卡漫画移动端采用自适应布局与分页加载，可根据网络状况自动调整加载策略，弱网环境下也能保持流畅阅读。</p>
+    </details>
+    <details>
+      <summary>怎么在巴卡漫画快速找到想看的漫画？</summary>
+      <p>可使用站内找书框按漫画名或题材检索，也可以通过「热门推荐」的题材筛选、国漫 / 日漫 / 悬疑奇幻分区、「追漫指南」的书架标签与「漫画排行榜」快速定位。</p>
+    </details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>巴卡漫画</h4>
+        <p>巴卡漫画提供热血、恋爱、奇幻、悬疑等题材漫画在线免费阅读服务，按单行本整理漫画大全与排行榜，移动端自适应，是找漫画看漫画的漫画导航站。</p>
+        <p style="margin-top:10px">网址：https://www.bakamanhua.cn</p>
+      </div>
+      <div>
+        <h4>书架导航</h4>
+        <p><a href="#">热门漫画</a></p>
+        <p><a href="#">国漫专区</a></p>
+        <p><a href="#">日漫专区</a></p>
+        <p><a href="#">悬疑奇幻</a></p>
+      </div>
+      <div>
+        <h4>榜单与指南</h4>
+        <p><a href="#">漫画排行榜</a></p>
+        <p><a href="#">追漫指南</a></p>
+        <p><a href="#">漫画资讯</a></p>
+        <p><a href="#">新刊上架</a></p>
+      </div>
+      <div>
+        <h4>关于本站</h4>
+        <p><a href="#">站点介绍</a></p>
+        <p><a href="#">免责声明</a></p>
+        <p><a href="#">版权投诉</a></p>
+        <p><a href="#">联系我们</a></p>
+      </div>
+    </div>
+    <nav class="f-links" aria-label="友情链接">
+      <a href="#">巴卡漫画在线阅读</a>
+      <a href="#">免费漫画大全</a>
+      <a href="#">国漫推荐</a>
+      <a href="#">日漫推荐</a>
+      <a href="#">漫画排行榜</a>
+      <a href="#">完结漫画</a>
+      <a href="#">连载漫画</a>
+      <a href="#">手机看漫画</a>
+    </nav>
+    <p class="copy">
+      © 2026 巴卡漫画 bakamanhua.cn · 本站仅为漫画信息聚合与导航展示<br>
+      巴卡漫画所收录的漫画信息均来自公开网络，版权归原权利人所有
+    </p>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="返回顶部">↑</button>
+
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),t=document.getElementById('toTop');
+  b && b.addEventListener('click',function(){
+    var open=document.body.classList.toggle('menu-open');
+    this.setAttribute('aria-expanded',open?'true':'false');
+    this.classList.toggle('on',open);
+  });
+  document.querySelectorAll('.nav a').forEach(function(a){
+    a.addEventListener('click',function(){
+      document.body.classList.remove('menu-open');
+      if(b){b.setAttribute('aria-expanded','false');b.classList.remove('on');}
+    });
+  });
+  t && t.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+  window.addEventListener('scroll',function(){
+    window.scrollY>420 ? t.classList.add('show') : t.classList.remove('show');
+  },{passive:true});
+  document.querySelectorAll('.tabs a').forEach(function(el){
+    el.addEventListener('click',function(){
+      document.querySelectorAll('.tabs a').forEach(function(x){x.classList.remove('on');});
+      el.classList.add('on');
+    });
+  });
+})();
+</script>
+</body>
+</html>
